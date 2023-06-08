@@ -4,8 +4,10 @@
     <Button @click="onClick">点击换主题色</Button>
   </Box>
   <Box class="example">
-    {{ state.switch }}
     <Switch v-model="state.switch" />
+    <template #label>
+      {{ state.switch }}
+    </template>
   </Box>
 </template>
 
@@ -29,9 +31,12 @@ const state = reactive({ switch: true });
 
 <style>
 .example {
-  height: 100%;
-  padding: 100px;
+  /* height: 100%; */
+  padding: 20px;
   box-sizing: border-box;
   text-align: center;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
 }
 </style>
