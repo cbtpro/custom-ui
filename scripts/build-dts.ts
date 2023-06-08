@@ -135,7 +135,7 @@ async function generateTypesDefinitions(
   await Promise.all(tasks);
 }
 
-async function build(pkgDirName) {
+async function build(pkgDirName: string) {
   const outDir = resolveProjectPath('dist', 'types');
   const pkgDir = resolvePackagePath(pkgDirName);
   const pkgSrcDir = resolvePackagePath(pkgDirName, 'src');

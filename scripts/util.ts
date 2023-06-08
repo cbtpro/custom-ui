@@ -15,7 +15,7 @@ export const resolvePackagePath = (...args: string[]) => {
   return path.join(projectDir, 'packages', ...args);
 };
 
-export const wirteFile = (file: string, text: string) => {
+export const writeFile = (file: string, text: string) => {
   const dir = path.dirname(file);
   if (!(fs.existsSync(dir) && fs.statSync(dir).isDirectory())) {
     fs.mkdirSync(dir, { recursive: true });

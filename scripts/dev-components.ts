@@ -11,7 +11,7 @@ import basicSsl from '@vitejs/plugin-basic-ssl';
     root: resolvePackagePath('components'),
     plugins: [pluginVue(), pluginVueJsx(), basicSsl()],
     server: {
-      host: true,
+      host: '0.0.0.0',
       port: 8080,
       https: true,
       open: true
