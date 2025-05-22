@@ -1,0 +1,10 @@
+{
+  "name": "My Project with pnpm",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "16",
+      "pnpm": true
+    }
+  },
+  "postCreateCommand": "pnpm install"
+}
